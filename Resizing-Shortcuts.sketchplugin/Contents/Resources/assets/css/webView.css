@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+  background: transparent;
+
+  /* Prevent the page to be scrollable */
+  overflow: hidden;
+
+  /* Force the default cursor, even on text */
+  cursor: default;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  /* Prevent the content from being selectionable */
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.08);
+  padding: 5px;
+}
+
+ul:first-of-type {
+  padding-top: 0;
+}
+
+li {
+  flex: 1 1 25%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  flex: none;
+  transition: all .1s ease;
+  cursor: pointer;
+}
+
+.icon:active {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+.icon--clear {
+  background-image: url(../images/icons/clear@2x.png);
+}
+.icon--h-blr {
+  background-image: url(../images/icons/h-blr@2x.png);
+}
+.icon--h-lr {
+  background-image: url(../images/icons/h-lr@2x.png);
+}
+.icon--h-tlr {
+  background-image: url(../images/icons/h-tlr@2x.png);
+}
+.icon--w-tb {
+  background-image: url(../images/icons/w-tb@2x.png);
+}
+.icon--w-tbl {
+  background-image: url(../images/icons/w-tbl@2x.png);
+}
+.icon--w-tbr {
+  background-image: url(../images/icons/w-tbr@2x.png);
+}
+.icon--wh-b {
+  background-image: url(../images/icons/wh-b@2x.png);
+}
+.icon--wh-l {
+  background-image: url(../images/icons/wh-l@2x.png);
+}
+.icon--wh-r {
+  background-image: url(../images/icons/wh-r@2x.png);
+}
+.icon--wh-t {
+  background-image: url(../images/icons/wh-t@2x.png);
+}
+.icon--wh {
+  background-image: url(../images/icons/wh@2x.png);
+}
+
+
+

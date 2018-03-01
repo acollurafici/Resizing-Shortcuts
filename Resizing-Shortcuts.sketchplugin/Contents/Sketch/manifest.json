@@ -1,0 +1,25 @@
+{
+  "name" : "Resizing Shortcuts",
+  "identifier" : "co.nudgit.resizingshortcuts",
+  "version" : "1.0",
+  "description" : "Resizing shorcuts panel",
+  "author" : "Anthony Collurafici",
+  "commands" : [
+    {
+      "script" : "plugin.js",
+      "handlers": {
+        "run": "onRun",
+        "shortcut" : "command 9",
+        "actions": {
+          "SelectionChanged.finish": "onSelectionChanged"
+        }
+      },
+      "name" : "Resizing Shortcuts",
+      "identifier" : "co.nudgit.resizingshortcuts.command"
+    }
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": ["co.nudgit.resizingshortcuts.command"]
+  }
+}
